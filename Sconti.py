@@ -14,6 +14,10 @@ def sconto(prezzi, animale):
     for i in range(len(prezzi)):
         if animale[i] == "N":
             sconto += prezzi[i] * 0.2
-    print("Il totale degli sconti è: ", sconto)
+            numero += 1
+    if numero > 5:
+        print("Il totale degli sconti è: ", sconto)
+        else:
+            sconto = 0
     return sconto
 main()
